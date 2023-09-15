@@ -1,0 +1,17 @@
+Necesitamos un programa que nos liste y grafique 
+la temperatura de la ciudad en los últimos 10 días y 
+se guarde en una base de datos
+
+Para esto debemos tener una pagína que nos proporcione
+los registros de temperatura en los ultimos 10 días en Cali.
+
+Plan de acción:
+
+-Verificar si python tiene una librería que nos de la información
+que Necesitamos
+
+-Verificar si python tiene una conexión a una base de datos
+
+//Tarea: Investigar como enlazar la libreria de python con la base de datos de mongodb
+
+//Tarea: Grafica (Verificar si existen liberias de graficacion)
