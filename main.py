@@ -6,7 +6,7 @@ from storage.data import variar_temperatura, obtener_data
 def main():
     temp = obtener_data('Bogota')
     list_temp=variar_temperatura(temp)
-    graficar_temperatura()
+    graficar_temperatura(list_temp)
     guardar_en_db()
     return 0
 

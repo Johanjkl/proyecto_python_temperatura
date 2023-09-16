@@ -60,7 +60,7 @@ def variar_temperatura(temperatura=10.55):
         nueva_temperatura=round(index + parte_flotante, 2)
         listas_de_temperaturas.append(nueva_temperatura) 
         #print(index + parte_flotante)
-        print(f'parte_entera es: {parte_flotante:.2f}')
+        #print(f'parte_entera es: {parte_flotante:.2f}')
     print(listas_de_temperaturas)
     
     for index in range(int(temperatura - 11), int(temperatura)):
