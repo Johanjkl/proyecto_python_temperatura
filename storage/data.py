@@ -46,12 +46,29 @@ def obtener_data(ciudad='Cali'):
         # Obtiene la temperatura en grados Celsius desde los datos JSON
         temperatura_celsius = data['main']['temp'] - 273.15
         print(f'Temperatura actual en {ciudad}: {temperatura_celsius:.2f}°C')
+        return temperatura_celsius
     else:
         print(f'No se pudo obtener la temperatura. Código de estado: {response.status_code}')
-    
-    return True
+        return False
 
-def extraer_temperatura():
-    print("Soy extraer temperatura")
-    return False
+def variar_temperatura(temperatura=10.55):
+    #li4 = list(range(-11, 12))
+    #print(li4)
+    listas_de_temperaturas=[]
+    parte_flotante=temperatura%1.0
+    for index in range(int(temperatura), int(temperatura + 11)):
+        nueva_temperatura=round(index + parte_flotante, 2)
+        listas_de_temperaturas.append(nueva_temperatura) 
+        #print(index + parte_flotante)
+        print(f'parte_entera es: {parte_flotante:.2f}')
+    print(listas_de_temperaturas)
+    
+    for index in range(int(temperatura - 11), int(temperatura)):
+        nueva_temperatura=round(index + parte_flotante, 2)
+        listas_de_temperaturas.append(nueva_temperatura) 
+        #print(index + parte_flotante)
+        #print(f'parte_entera es: {parte_flotante:.2f}')
+    listas_de_temperaturas.sort()
+    print(listas_de_temperaturas)
+    return listas_de_temperaturas
 

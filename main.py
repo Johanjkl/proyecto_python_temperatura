@@ -1,11 +1,11 @@
 from db.base_de_datos import guardar_en_db
 from draw.graficar import graficar_temperatura
-from storage.data import extraer_temperatura, obtener_data
+from storage.data import variar_temperatura, obtener_data
 
 
 def main():
-    obtener_data('Bogota')
-    extraer_temperatura()
+    temp = obtener_data('Bogota')
+    list_temp=variar_temperatura(temp)
     graficar_temperatura()
     guardar_en_db()
     return 0
