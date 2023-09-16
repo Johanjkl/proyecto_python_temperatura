@@ -15,13 +15,24 @@ def coordenadas(ciudad):
             latitud = '3.4516'
             return longitud, latitud
         
-        case _:
-            longitud = '76.5320'
-            latitud = '3.4516'
+        case 'Medellin':
+            longitud = '75.56359'
+            latitud = '6.2518400'
             return longitud, latitud
         
+        case 'Barranquilla':
+            longitud = '74.7813'
+            latitud = '10.9685'
+            return longitud, latitud
+        
+        case _:
+            print('No se pudo obtener la temperatura')
+            #longitud = '76.5320'
+            #latitud = '3.4516'
+            #return longitud, latitud
+        
 
-def obtener_data(ciudad='Cali'):
+def obtener_data(ciudad):
     
     long, lati = coordenadas(ciudad)
     print(long, lati)
