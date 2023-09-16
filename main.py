@@ -4,7 +4,7 @@ from storage.data import extraer_temperatura, obtener_data
 
 
 def main():
-    obtener_data()
+    obtener_data('Bogota')
     extraer_temperatura()
     graficar_temperatura()
     guardar_en_db()

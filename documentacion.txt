@@ -15,3 +15,5 @@ que Necesitamos
 //Tarea: Investigar como enlazar la libreria de python con la base de datos de mongodb
 
 //Tarea: Grafica (Verificar si existen liberias de graficacion)
+
+Coordenadas Cali: 3°27′00″N 76°32′00″O
